@@ -1,13 +1,17 @@
 <template>
   <div class="navbar-glass fixed-top">
     <!-- Logo -->
-    <a href="/" class="navbar-brand">Océane Sohier</a>
+    <router-link to="/" class="navbar-item navbar-link">Océane Sohier</router-link>
     <!-- Right Navigation -->
     <div class="navbar-right d-none d-sm-flex">
-      <a href="" class="navbar-item navbar-link">Portrait</a>
+      <router-link to="/portrait" class="navbar-item navbar-link">Portrait</router-link>
+      <router-link to="/projets" class="navbar-item navbar-link">Projets</router-link>
+      <router-link to="/Inspirations" class="navbar-item navbar-link">Inspirations</router-link>
+      <router-link to="/contact" class="navbar-item navbar-link">Contact</router-link>
+<!--       <a href="" class="navbar-item navbar-link">Portrait</a>
       <a href="" class="navbar-item navbar-link">Projets</a>
       <a href="" class="navbar-item navbar-link">Inspirations</a>
-      <a href="" class="navbar-item navbar-link">Contact</a>
+      <a href="" class="navbar-item navbar-link">Contact</a> -->
     </div>
     <!-- Dropdown appearing on mobile only -->
     <div class="navbar-wagon-item d-sm-none">

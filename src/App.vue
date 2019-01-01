@@ -1,14 +1,12 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-    <Carousel></Carousel>
-    <Banner></Banner>
+    <router-view/>
   </div>
 </template>
 <script>
   import NavBar from "./components/NavBar.vue";
-  import Carousel from "./components/Carousel.vue";
-  import Banner from "./components/Banner.vue";
+  import Carousel from "./components/Carousel.vue"
   // import WpClient from ".services/WpClient.js"
   import axios from 'axios'
 
@@ -16,8 +14,7 @@
     name: "app",
     components: {
       NavBar,
-      Carousel,
-      Banner
+      Carousel
     }
   };
 </script>
